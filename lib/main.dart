@@ -15,13 +15,12 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => CounterBloc(),
       child: MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      ),
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            useMaterial3: true,
+          ),
+          home: const UserList()),
     );
   }
 }
